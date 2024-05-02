@@ -13,9 +13,7 @@ export class ShoppingListComponent {
     new Ingredient('Bananas', 20)
   ];
 
-  constructor() {
-  }
-
-  ngOnInit() {
+  onIngredientAdded(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
   }
 }
